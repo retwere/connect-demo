@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@pinecone-database/connect": "^0.0.3",
+    "@pinecone-database/pinecone": "^2.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
