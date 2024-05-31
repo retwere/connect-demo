@@ -28,8 +28,13 @@ function Pinecone() {
     await pc.createIndex({
       name: 'test-index',
       dimension: 768,
-      spec: null,
-    });
+      spec: {
+        serverless: {
+          cloud: 'aws',
+          region: 'us-east-1'
+        }
+      }
+  });
     setIndexCreated(true);
   }, [apiKey, indexCreated]);
 
